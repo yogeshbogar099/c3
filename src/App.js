@@ -6,12 +6,22 @@ import { Admin } from "./components/Admin";
 import { ProtectedRoute } from "./components/PrivateRoute";
 import { Navbar } from "./components/Navbar";
 import { Logout } from "./components/Logout";
+import Routes from "Router"
+
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Routes>{/* Routes here */}</Routes>
+      <Home />
+      <Login />
+      <EmployeeList />
+      <EmployeeDetails />
+      <Admin />
+      <ProtectedRoute />
+      <Logout />
+      <Routes>{
+      }</Routes>
     </div>
   );
 }
